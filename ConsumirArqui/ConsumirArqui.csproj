@@ -170,6 +170,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Articulos\Articulos.aspx" />
+    <Content Include="Cliente\Cliente.aspx" />
     <Content Include="Connected Services\webArticulo\ConsumirArqui.webArticulo.EliminarResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -364,6 +365,13 @@
     </Compile>
     <Compile Include="Articulos\Articulos.aspx.designer.cs">
       <DependentUpon>Articulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Cliente.aspx.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\Cliente.aspx.designer.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\webArticulo\Reference.cs">
       <AutoGen>True</AutoGen>
