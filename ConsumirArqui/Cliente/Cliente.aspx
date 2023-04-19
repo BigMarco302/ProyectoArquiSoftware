@@ -3,7 +3,7 @@
     <h1> Pagina de Cliente</h1>
     <div class="row">
         <div class="col-md-3">
-			<asp:TextBox ID="txtEmail" runat="server" PlaceHolder="Email"></asp:TextBox>
+			<asp:TextBox ID="txtEmail" runat="server" PlaceHolder="Email" ></asp:TextBox>
         </div>
         <div class="col-md-3">
             <asp:TextBox ID="txtPsw" runat="server" PlaceHolder="Contraseña"></asp:TextBox>
