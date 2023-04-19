@@ -32,6 +32,18 @@ namespace ConsumirArqui.Cliente
         protected void btnModi_Click(object sender, EventArgs e)
         {
             webSCliente.WebClienteSoapClient web = new webSCliente.WebClienteSoapClient();
+            web.Modificar(txtEmail.Text, txtPsw.Text, txtNombre.Text, txtApe.Text, txtTel.Text, txtCate.Text);
+            txtEmail.Text = "";
+            txtPsw.Text = "";
+            txtNombre.Text = "";
+            txtApe.Text = "";
+            txtTel.Text = "";
+            txtCate.Text = "";
+        }
+
+        protected void btnEli_Click(object sender, EventArgs e)
+        {
+            webSCliente.WebClienteSoapClient web = new webSCliente.WebClienteSoapClient();
             web.Eliminar(txtEmail.Text);
             txtEmail.Text = "";
             txtPsw.Text = "";
@@ -39,6 +51,6 @@ namespace ConsumirArqui.Cliente
             txtApe.Text = "";
             txtTel.Text = "";
             txtCate.Text = "";
-            }
+        }
     }
 }
