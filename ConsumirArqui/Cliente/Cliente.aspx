@@ -22,6 +22,6 @@
         </div>
     </div>
     <asp:Button ID="btnInsertar" runat="server" Text="Agregar" OnClick="btnInsertar_Click" />
-    <asp:Button ID="btnModi" runat="server" Text="Modificar" />
+    <asp:Button ID="btnModi" runat="server" Text="Modificar" OnClick="btnModi_Click" />
     <asp:Button ID="btnEli" runat="server" Text="Eliminar" />
 </asp:Content>

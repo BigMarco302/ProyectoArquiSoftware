@@ -28,5 +28,17 @@ namespace ConsumirArqui.Cliente
             txtTel.Text = "";
             txtCate.Text = "";
         }
+
+        protected void btnModi_Click(object sender, EventArgs e)
+        {
+            webSCliente.WebClienteSoapClient web = new webSCliente.WebClienteSoapClient();
+            web.Eliminar(txtEmail.Text);
+            txtEmail.Text = "";
+            txtPsw.Text = "";
+            txtNombre.Text = "";
+            txtApe.Text = "";
+            txtTel.Text = "";
+            txtCate.Text = "";
+            }
     }
 }
