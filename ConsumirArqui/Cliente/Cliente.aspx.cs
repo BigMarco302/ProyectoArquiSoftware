@@ -9,9 +9,19 @@ namespace ConsumirArqui.Cliente
 {
     public partial class Cliente : System.Web.UI.Page
     {
+        public string GetConnectionString()
+        {
+            string sqlServerConnectionString = "Data Source=ESAU\\SQLEXPRESS; Initial Catalog=BDArqui; User ID=sa; Password=aaa";
+            return sqlServerConnectionString;
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-    }
+
+        protected void btnInsertar_Click(object sender, EventArgs e)
+        {
+
+        }
 }
