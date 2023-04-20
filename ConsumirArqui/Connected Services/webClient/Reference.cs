@@ -8,33 +8,33 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConsumirArqui.webSCliente {
+namespace ConsumirArqui.webClient {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="webSCliente.WebClienteSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="webClient.WebClienteSoap")]
     public interface WebClienteSoap {
         
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento nombre del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento email del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Insertar", ReplyAction="*")]
-        ConsumirArqui.webSCliente.InsertarResponse Insertar(ConsumirArqui.webSCliente.InsertarRequest request);
+        ConsumirArqui.webClient.InsertarResponse Insertar(ConsumirArqui.webClient.InsertarRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Insertar", ReplyAction="*")]
-        System.Threading.Tasks.Task<ConsumirArqui.webSCliente.InsertarResponse> InsertarAsync(ConsumirArqui.webSCliente.InsertarRequest request);
+        System.Threading.Tasks.Task<ConsumirArqui.webClient.InsertarResponse> InsertarAsync(ConsumirArqui.webClient.InsertarRequest request);
         
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento nombre del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento email del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Modificar", ReplyAction="*")]
-        ConsumirArqui.webSCliente.ModificarResponse Modificar(ConsumirArqui.webSCliente.ModificarRequest request);
+        ConsumirArqui.webClient.ModificarResponse Modificar(ConsumirArqui.webClient.ModificarRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Modificar", ReplyAction="*")]
-        System.Threading.Tasks.Task<ConsumirArqui.webSCliente.ModificarResponse> ModificarAsync(ConsumirArqui.webSCliente.ModificarRequest request);
+        System.Threading.Tasks.Task<ConsumirArqui.webClient.ModificarResponse> ModificarAsync(ConsumirArqui.webClient.ModificarRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento email del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Eliminar", ReplyAction="*")]
-        ConsumirArqui.webSCliente.EliminarResponse Eliminar(ConsumirArqui.webSCliente.EliminarRequest request);
+        ConsumirArqui.webClient.EliminarResponse Eliminar(ConsumirArqui.webClient.EliminarRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Eliminar", ReplyAction="*")]
-        System.Threading.Tasks.Task<ConsumirArqui.webSCliente.EliminarResponse> EliminarAsync(ConsumirArqui.webSCliente.EliminarRequest request);
+        System.Threading.Tasks.Task<ConsumirArqui.webClient.EliminarResponse> EliminarAsync(ConsumirArqui.webClient.EliminarRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -44,12 +44,12 @@ namespace ConsumirArqui.webSCliente {
     public partial class InsertarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Insertar", Namespace="http://tempuri.org/", Order=0)]
-        public ConsumirArqui.webSCliente.InsertarRequestBody Body;
+        public ConsumirArqui.webClient.InsertarRequestBody Body;
         
         public InsertarRequest() {
         }
         
-        public InsertarRequest(ConsumirArqui.webSCliente.InsertarRequestBody Body) {
+        public InsertarRequest(ConsumirArqui.webClient.InsertarRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -61,19 +61,19 @@ namespace ConsumirArqui.webSCliente {
     public partial class InsertarRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string nombre;
+        public string email;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string apellido;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string telefono;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
         public string psw;
         
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string nombre;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string apellido;
+        
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string email;
+        public string telefono;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
         public string categoria;
@@ -81,12 +81,12 @@ namespace ConsumirArqui.webSCliente {
         public InsertarRequestBody() {
         }
         
-        public InsertarRequestBody(string nombre, string apellido, string telefono, string psw, string email, string categoria) {
+        public InsertarRequestBody(string email, string psw, string nombre, string apellido, string telefono, string categoria) {
+            this.email = email;
+            this.psw = psw;
             this.nombre = nombre;
             this.apellido = apellido;
             this.telefono = telefono;
-            this.psw = psw;
-            this.email = email;
             this.categoria = categoria;
         }
     }
@@ -98,12 +98,12 @@ namespace ConsumirArqui.webSCliente {
     public partial class InsertarResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertarResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ConsumirArqui.webSCliente.InsertarResponseBody Body;
+        public ConsumirArqui.webClient.InsertarResponseBody Body;
         
         public InsertarResponse() {
         }
         
-        public InsertarResponse(ConsumirArqui.webSCliente.InsertarResponseBody Body) {
+        public InsertarResponse(ConsumirArqui.webClient.InsertarResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -132,12 +132,12 @@ namespace ConsumirArqui.webSCliente {
     public partial class ModificarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Modificar", Namespace="http://tempuri.org/", Order=0)]
-        public ConsumirArqui.webSCliente.ModificarRequestBody Body;
+        public ConsumirArqui.webClient.ModificarRequestBody Body;
         
         public ModificarRequest() {
         }
         
-        public ModificarRequest(ConsumirArqui.webSCliente.ModificarRequestBody Body) {
+        public ModificarRequest(ConsumirArqui.webClient.ModificarRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -149,19 +149,19 @@ namespace ConsumirArqui.webSCliente {
     public partial class ModificarRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string nombre;
+        public string email;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string apellido;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string telefono;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
         public string psw;
         
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string nombre;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string apellido;
+        
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string email;
+        public string telefono;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
         public string categoria;
@@ -169,12 +169,12 @@ namespace ConsumirArqui.webSCliente {
         public ModificarRequestBody() {
         }
         
-        public ModificarRequestBody(string nombre, string apellido, string telefono, string psw, string email, string categoria) {
+        public ModificarRequestBody(string email, string psw, string nombre, string apellido, string telefono, string categoria) {
+            this.email = email;
+            this.psw = psw;
             this.nombre = nombre;
             this.apellido = apellido;
             this.telefono = telefono;
-            this.psw = psw;
-            this.email = email;
             this.categoria = categoria;
         }
     }
@@ -186,12 +186,12 @@ namespace ConsumirArqui.webSCliente {
     public partial class ModificarResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ModificarResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ConsumirArqui.webSCliente.ModificarResponseBody Body;
+        public ConsumirArqui.webClient.ModificarResponseBody Body;
         
         public ModificarResponse() {
         }
         
-        public ModificarResponse(ConsumirArqui.webSCliente.ModificarResponseBody Body) {
+        public ModificarResponse(ConsumirArqui.webClient.ModificarResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -220,12 +220,12 @@ namespace ConsumirArqui.webSCliente {
     public partial class EliminarRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Eliminar", Namespace="http://tempuri.org/", Order=0)]
-        public ConsumirArqui.webSCliente.EliminarRequestBody Body;
+        public ConsumirArqui.webClient.EliminarRequestBody Body;
         
         public EliminarRequest() {
         }
         
-        public EliminarRequest(ConsumirArqui.webSCliente.EliminarRequestBody Body) {
+        public EliminarRequest(ConsumirArqui.webClient.EliminarRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -254,12 +254,12 @@ namespace ConsumirArqui.webSCliente {
     public partial class EliminarResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="EliminarResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ConsumirArqui.webSCliente.EliminarResponseBody Body;
+        public ConsumirArqui.webClient.EliminarResponseBody Body;
         
         public EliminarResponse() {
         }
         
-        public EliminarResponse(ConsumirArqui.webSCliente.EliminarResponseBody Body) {
+        public EliminarResponse(ConsumirArqui.webClient.EliminarResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -282,12 +282,12 @@ namespace ConsumirArqui.webSCliente {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface WebClienteSoapChannel : ConsumirArqui.webSCliente.WebClienteSoap, System.ServiceModel.IClientChannel {
+    public interface WebClienteSoapChannel : ConsumirArqui.webClient.WebClienteSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WebClienteSoapClient : System.ServiceModel.ClientBase<ConsumirArqui.webSCliente.WebClienteSoap>, ConsumirArqui.webSCliente.WebClienteSoap {
+    public partial class WebClienteSoapClient : System.ServiceModel.ClientBase<ConsumirArqui.webClient.WebClienteSoap>, ConsumirArqui.webClient.WebClienteSoap {
         
         public WebClienteSoapClient() {
         }
@@ -309,98 +309,98 @@ namespace ConsumirArqui.webSCliente {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ConsumirArqui.webSCliente.InsertarResponse ConsumirArqui.webSCliente.WebClienteSoap.Insertar(ConsumirArqui.webSCliente.InsertarRequest request) {
+        ConsumirArqui.webClient.InsertarResponse ConsumirArqui.webClient.WebClienteSoap.Insertar(ConsumirArqui.webClient.InsertarRequest request) {
             return base.Channel.Insertar(request);
         }
         
-        public string Insertar(string nombre, string apellido, string telefono, string psw, string email, string categoria) {
-            ConsumirArqui.webSCliente.InsertarRequest inValue = new ConsumirArqui.webSCliente.InsertarRequest();
-            inValue.Body = new ConsumirArqui.webSCliente.InsertarRequestBody();
+        public string Insertar(string email, string psw, string nombre, string apellido, string telefono, string categoria) {
+            ConsumirArqui.webClient.InsertarRequest inValue = new ConsumirArqui.webClient.InsertarRequest();
+            inValue.Body = new ConsumirArqui.webClient.InsertarRequestBody();
+            inValue.Body.email = email;
+            inValue.Body.psw = psw;
             inValue.Body.nombre = nombre;
             inValue.Body.apellido = apellido;
             inValue.Body.telefono = telefono;
-            inValue.Body.psw = psw;
-            inValue.Body.email = email;
             inValue.Body.categoria = categoria;
-            ConsumirArqui.webSCliente.InsertarResponse retVal = ((ConsumirArqui.webSCliente.WebClienteSoap)(this)).Insertar(inValue);
+            ConsumirArqui.webClient.InsertarResponse retVal = ((ConsumirArqui.webClient.WebClienteSoap)(this)).Insertar(inValue);
             return retVal.Body.InsertarResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ConsumirArqui.webSCliente.InsertarResponse> ConsumirArqui.webSCliente.WebClienteSoap.InsertarAsync(ConsumirArqui.webSCliente.InsertarRequest request) {
+        System.Threading.Tasks.Task<ConsumirArqui.webClient.InsertarResponse> ConsumirArqui.webClient.WebClienteSoap.InsertarAsync(ConsumirArqui.webClient.InsertarRequest request) {
             return base.Channel.InsertarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ConsumirArqui.webSCliente.InsertarResponse> InsertarAsync(string nombre, string apellido, string telefono, string psw, string email, string categoria) {
-            ConsumirArqui.webSCliente.InsertarRequest inValue = new ConsumirArqui.webSCliente.InsertarRequest();
-            inValue.Body = new ConsumirArqui.webSCliente.InsertarRequestBody();
+        public System.Threading.Tasks.Task<ConsumirArqui.webClient.InsertarResponse> InsertarAsync(string email, string psw, string nombre, string apellido, string telefono, string categoria) {
+            ConsumirArqui.webClient.InsertarRequest inValue = new ConsumirArqui.webClient.InsertarRequest();
+            inValue.Body = new ConsumirArqui.webClient.InsertarRequestBody();
+            inValue.Body.email = email;
+            inValue.Body.psw = psw;
             inValue.Body.nombre = nombre;
             inValue.Body.apellido = apellido;
             inValue.Body.telefono = telefono;
-            inValue.Body.psw = psw;
-            inValue.Body.email = email;
             inValue.Body.categoria = categoria;
-            return ((ConsumirArqui.webSCliente.WebClienteSoap)(this)).InsertarAsync(inValue);
+            return ((ConsumirArqui.webClient.WebClienteSoap)(this)).InsertarAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ConsumirArqui.webSCliente.ModificarResponse ConsumirArqui.webSCliente.WebClienteSoap.Modificar(ConsumirArqui.webSCliente.ModificarRequest request) {
+        ConsumirArqui.webClient.ModificarResponse ConsumirArqui.webClient.WebClienteSoap.Modificar(ConsumirArqui.webClient.ModificarRequest request) {
             return base.Channel.Modificar(request);
         }
         
-        public string Modificar(string nombre, string apellido, string telefono, string psw, string email, string categoria) {
-            ConsumirArqui.webSCliente.ModificarRequest inValue = new ConsumirArqui.webSCliente.ModificarRequest();
-            inValue.Body = new ConsumirArqui.webSCliente.ModificarRequestBody();
+        public string Modificar(string email, string psw, string nombre, string apellido, string telefono, string categoria) {
+            ConsumirArqui.webClient.ModificarRequest inValue = new ConsumirArqui.webClient.ModificarRequest();
+            inValue.Body = new ConsumirArqui.webClient.ModificarRequestBody();
+            inValue.Body.email = email;
+            inValue.Body.psw = psw;
             inValue.Body.nombre = nombre;
             inValue.Body.apellido = apellido;
             inValue.Body.telefono = telefono;
-            inValue.Body.psw = psw;
-            inValue.Body.email = email;
             inValue.Body.categoria = categoria;
-            ConsumirArqui.webSCliente.ModificarResponse retVal = ((ConsumirArqui.webSCliente.WebClienteSoap)(this)).Modificar(inValue);
+            ConsumirArqui.webClient.ModificarResponse retVal = ((ConsumirArqui.webClient.WebClienteSoap)(this)).Modificar(inValue);
             return retVal.Body.ModificarResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ConsumirArqui.webSCliente.ModificarResponse> ConsumirArqui.webSCliente.WebClienteSoap.ModificarAsync(ConsumirArqui.webSCliente.ModificarRequest request) {
+        System.Threading.Tasks.Task<ConsumirArqui.webClient.ModificarResponse> ConsumirArqui.webClient.WebClienteSoap.ModificarAsync(ConsumirArqui.webClient.ModificarRequest request) {
             return base.Channel.ModificarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ConsumirArqui.webSCliente.ModificarResponse> ModificarAsync(string nombre, string apellido, string telefono, string psw, string email, string categoria) {
-            ConsumirArqui.webSCliente.ModificarRequest inValue = new ConsumirArqui.webSCliente.ModificarRequest();
-            inValue.Body = new ConsumirArqui.webSCliente.ModificarRequestBody();
+        public System.Threading.Tasks.Task<ConsumirArqui.webClient.ModificarResponse> ModificarAsync(string email, string psw, string nombre, string apellido, string telefono, string categoria) {
+            ConsumirArqui.webClient.ModificarRequest inValue = new ConsumirArqui.webClient.ModificarRequest();
+            inValue.Body = new ConsumirArqui.webClient.ModificarRequestBody();
+            inValue.Body.email = email;
+            inValue.Body.psw = psw;
             inValue.Body.nombre = nombre;
             inValue.Body.apellido = apellido;
             inValue.Body.telefono = telefono;
-            inValue.Body.psw = psw;
-            inValue.Body.email = email;
             inValue.Body.categoria = categoria;
-            return ((ConsumirArqui.webSCliente.WebClienteSoap)(this)).ModificarAsync(inValue);
+            return ((ConsumirArqui.webClient.WebClienteSoap)(this)).ModificarAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ConsumirArqui.webSCliente.EliminarResponse ConsumirArqui.webSCliente.WebClienteSoap.Eliminar(ConsumirArqui.webSCliente.EliminarRequest request) {
+        ConsumirArqui.webClient.EliminarResponse ConsumirArqui.webClient.WebClienteSoap.Eliminar(ConsumirArqui.webClient.EliminarRequest request) {
             return base.Channel.Eliminar(request);
         }
         
         public string Eliminar(string email) {
-            ConsumirArqui.webSCliente.EliminarRequest inValue = new ConsumirArqui.webSCliente.EliminarRequest();
-            inValue.Body = new ConsumirArqui.webSCliente.EliminarRequestBody();
+            ConsumirArqui.webClient.EliminarRequest inValue = new ConsumirArqui.webClient.EliminarRequest();
+            inValue.Body = new ConsumirArqui.webClient.EliminarRequestBody();
             inValue.Body.email = email;
-            ConsumirArqui.webSCliente.EliminarResponse retVal = ((ConsumirArqui.webSCliente.WebClienteSoap)(this)).Eliminar(inValue);
+            ConsumirArqui.webClient.EliminarResponse retVal = ((ConsumirArqui.webClient.WebClienteSoap)(this)).Eliminar(inValue);
             return retVal.Body.EliminarResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ConsumirArqui.webSCliente.EliminarResponse> ConsumirArqui.webSCliente.WebClienteSoap.EliminarAsync(ConsumirArqui.webSCliente.EliminarRequest request) {
+        System.Threading.Tasks.Task<ConsumirArqui.webClient.EliminarResponse> ConsumirArqui.webClient.WebClienteSoap.EliminarAsync(ConsumirArqui.webClient.EliminarRequest request) {
             return base.Channel.EliminarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ConsumirArqui.webSCliente.EliminarResponse> EliminarAsync(string email) {
-            ConsumirArqui.webSCliente.EliminarRequest inValue = new ConsumirArqui.webSCliente.EliminarRequest();
-            inValue.Body = new ConsumirArqui.webSCliente.EliminarRequestBody();
+        public System.Threading.Tasks.Task<ConsumirArqui.webClient.EliminarResponse> EliminarAsync(string email) {
+            ConsumirArqui.webClient.EliminarRequest inValue = new ConsumirArqui.webClient.EliminarRequest();
+            inValue.Body = new ConsumirArqui.webClient.EliminarRequestBody();
             inValue.Body.email = email;
-            return ((ConsumirArqui.webSCliente.WebClienteSoap)(this)).EliminarAsync(inValue);
+            return ((ConsumirArqui.webClient.WebClienteSoap)(this)).EliminarAsync(inValue);
         }
     }
 }

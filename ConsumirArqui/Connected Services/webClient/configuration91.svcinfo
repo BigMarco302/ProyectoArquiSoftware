@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="l96a8YIMsgDxFdDFUCCMdKqIfwLfMLPfY/cugQAzbU8=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="hHRTcRJvM3rC1qip2KG9M/i9DQm7USl1tXvsWNmqFmY=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="WebClienteSoap">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="WebClienteSoap" contract="webSCliente.WebClienteSoap" bindingType="basicHttpBinding" address="http://localhost/ServiceArqui/WebCliente/WebCliente.asmx" bindingConfiguration="WebClienteSoap">
+    <endpoint name="WebClienteSoap" contract="webClient.WebClienteSoap" bindingType="basicHttpBinding" address="http://localhost/ServArqui/WebCliente/WebCliente.asmx" bindingConfiguration="WebClienteSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost/ServiceArqui/WebCliente/WebCliente.asmx</serializedValue>
+          <serializedValue>http://localhost/ServArqui/WebCliente/WebCliente.asmx</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -127,7 +127,7 @@
           <serializedValue>WebClienteSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>webSCliente.WebClienteSoap</serializedValue>
+          <serializedValue>webClient.WebClienteSoap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

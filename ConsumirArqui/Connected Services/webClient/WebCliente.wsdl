@@ -5,11 +5,11 @@
       <s:element name="Insertar">
         <s:complexType>
           <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="psw" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="apellido" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="psw" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="categoria" type="s:string" />
           </s:sequence>
         </s:complexType>
@@ -24,11 +24,11 @@
       <s:element name="Modificar">
         <s:complexType>
           <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="psw" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="apellido" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="psw" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="categoria" type="s:string" />
           </s:sequence>
         </s:complexType>
@@ -150,10 +150,10 @@
   </wsdl:binding>
   <wsdl:service name="WebCliente">
     <wsdl:port name="WebClienteSoap" binding="tns:WebClienteSoap">
-      <soap:address location="http://localhost/ServiceArqui/WebCliente/WebCliente.asmx" />
+      <soap:address location="http://localhost/ServArqui/WebCliente/WebCliente.asmx" />
     </wsdl:port>
     <wsdl:port name="WebClienteSoap12" binding="tns:WebClienteSoap12">
-      <soap12:address location="http://localhost/ServiceArqui/WebCliente/WebCliente.asmx" />
+      <soap12:address location="http://localhost/ServArqui/WebCliente/WebCliente.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
