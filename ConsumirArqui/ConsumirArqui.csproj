@@ -203,6 +203,22 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Connected Services\webEnvio\ConsumirArqui.webEnvio.EliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\webEnvio\ConsumirArqui.webEnvio.InsertarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\webEnvio\ConsumirArqui.webEnvio.ModificarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\webEnvio\DatosEnvio.disco" />
+    <None Include="Connected Services\webEnvio\configuration91.svcinfo" />
+    <None Include="Connected Services\webEnvio\configuration.svcinfo" />
+    <None Include="Connected Services\webEnvio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -210,6 +226,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Envio\DatosEnv.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -224,6 +241,7 @@
     <Content Include="Account\Web.config" />
     <None Include="Connected Services\webArticulo\ServiceArqui.wsdl" />
     <None Include="Connected Services\webClient\WebCliente.wsdl" />
+    <None Include="Connected Services\webEnvio\DatosEnvio.wsdl" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -400,6 +418,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\webEnvio\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -413,6 +436,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Envio\DatosEnv.aspx.cs">
+      <DependentUpon>DatosEnv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Envio\DatosEnv.aspx.designer.cs">
+      <DependentUpon>DatosEnv.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -462,6 +492,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\webArticulo\" />
     <WCFMetadataStorage Include="Connected Services\webClient\" />
+    <WCFMetadataStorage Include="Connected Services\webEnvio\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
