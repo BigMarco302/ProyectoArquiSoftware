@@ -170,7 +170,34 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Articulos\Articulos.aspx" />
+<<<<<<< HEAD
     <Content Include="Cliente\Cliente.aspx" />
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+    <Content Include="Cliente\Cliente.aspx" />
+=======
+    <Content Include="Carrito\Carrito.aspx" />
+    <Content Include="Connected Services\ServiceReference1\ConsumirArqui.ServiceReference1.EliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\ConsumirArqui.ServiceReference1.InsertarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\ConsumirArqui.ServiceReference1.ModificarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReference1\ServiceArticuloPedido.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Trabajo de Marco y Vane
     <Content Include="Connected Services\webArticulo\ConsumirArqui.webArticulo.EliminarResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -180,6 +207,7 @@
     <Content Include="Connected Services\webArticulo\ConsumirArqui.webArticulo.ModificarResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\ServiceReference1\ServiceArticuloPedido.wsdl" />
     <None Include="Connected Services\webArticulo\ServiceArqui.disco" />
     <None Include="Connected Services\webArticulo\configuration91.svcinfo" />
     <None Include="Connected Services\webArticulo\configuration.svcinfo" />
@@ -243,6 +271,7 @@
     <None Include="Connected Services\webClient\WebCliente.wsdl" />
     <None Include="Connected Services\webEnvio\DatosEnvio.wsdl" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Pedido\pedido.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -401,13 +430,37 @@
     <Compile Include="Articulos\Articulos.aspx.designer.cs">
       <DependentUpon>Articulos.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Trabajo de Marco y Vane
     <Compile Include="Cliente\Cliente.aspx.cs">
       <DependentUpon>Cliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cliente\Cliente.aspx.designer.cs">
       <DependentUpon>Cliente.aspx</DependentUpon>
+<<<<<<< HEAD
     </Compile>
+=======
+=======
+    <Compile Include="Carrito\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+>>>>>>> Stashed changes
+    </Compile>
+>>>>>>> Stashed changes
+>>>>>>> Trabajo de Marco y Vane
     <Compile Include="Connected Services\webArticulo\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -448,6 +501,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Pedido\pedido.aspx.cs">
+      <DependentUpon>pedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pedido\pedido.aspx.designer.cs">
+      <DependentUpon>pedido.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -490,6 +550,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
     <WCFMetadataStorage Include="Connected Services\webArticulo\" />
     <WCFMetadataStorage Include="Connected Services\webClient\" />
     <WCFMetadataStorage Include="Connected Services\webEnvio\" />
